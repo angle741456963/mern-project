@@ -34,7 +34,7 @@ const RegisterComponent = () => {
       })
       .catch((e) => {
         console.log(e);
-
+        setMessage(e.response.data);
         //
       });
   };
