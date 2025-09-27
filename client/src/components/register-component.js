@@ -33,9 +33,7 @@ const RegisterComponent = () => {
         navigate("/login");
       })
       .catch((e) => {
-        if (!setMessage(e.response.data)) {
-          console.log(e);
-        }
+        console.log(e);
 
         //
       });
