@@ -33,7 +33,11 @@ const RegisterComponent = () => {
         navigate("/login");
       })
       .catch((e) => {
-        setMessage(e.response.data);
+        if (!setMessage(e.response.data)) {
+          console.log(e);
+        }
+
+        //
       });
   };
 
